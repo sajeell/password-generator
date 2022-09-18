@@ -5,6 +5,7 @@ import { Fragment, useEffect, useRef, useState } from 'react'
 import clipBoardIcon from '../shared/icon/clipboard.svg'
 import Slider from '../shared/input/Slider'
 import RadioGroup from '../shared/input/RadioGroup'
+import Button from '../shared/input/Button'
 
 function Main() {
   const [password, setPassword] = useState('')
@@ -71,11 +72,26 @@ function Main() {
           <div
             className='tool-row'
             id='strength-row'
-          ></div>
+          >
+            <div id='strength-left'>
+              <p id='strength-heading'>STRENGTH</p>
+            </div>
+            <div id='strength-right'>
+              <p id='strength-value'>MEDIUM</p>
+              <div className='strength-box-wrapper'>
+                <div className='strength-box'></div>
+                <div className='strength-box'></div>
+                <div className='strength-box'></div>
+                <div className='strength-box'></div>
+              </div>
+            </div>
+          </div>
           <div
             className='tool-row'
             id='generate-button-row'
-          ></div>
+          >
+            <Button />
+          </div>
         </div>
       </div>
     </div>
