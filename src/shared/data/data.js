@@ -1,3 +1,3 @@
-const title = 'Password Genetator'
+const title = 'Password Generator'
 
 export { title }

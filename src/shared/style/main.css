@@ -1,0 +1,50 @@
+:root {
+  --box-bg-color: #24232c;
+  --font-color: #817d92;
+  --almost-white-color: #e6e5ea;
+  --box-width: 25vw;
+}
+
+/* Main Div Style -> Start */
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+}
+
+/* Main Div Style -> End */
+
+/* Heading Style -> Start */
+
+#heading {
+  color: var(--font-color);
+  font-size: 1em;
+}
+
+/* Heading Style -> End */
+
+/* Password Box Style -> Start */
+
+.password-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--box-bg-color);
+  padding: 0em 2em;
+  border-radius: 5px;
+  width: var(--box-width);
+}
+
+#password {
+  color: var(--almost-white-color);
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+#copy-button {
+  cursor: pointer;
+}
+
+/* Password Box Style -> End */
