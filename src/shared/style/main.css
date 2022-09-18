@@ -2,6 +2,7 @@
   --box-bg-color: #24232c;
   --font-color: #817d92;
   --almost-white-color: #e6e5ea;
+  --neon-green-color: #a4ffaf;
   --box-width: 25vw;
 }
 
@@ -24,6 +25,17 @@
 }
 
 /* Heading Style -> End */
+
+/* Box Wrapper Style -> Start */
+
+.box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Box Wrapper Style -> End */
 
 /* Password Box Style -> Start */
 
@@ -48,6 +60,42 @@
 }
 
 /* Password Box Style -> End */
+
+/* Tools Box Style -> Start */
+
+.tools-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box-bg-color);
+  padding: 0em 2em;
+  border-radius: 5px;
+  width: var(--box-width);
+  margin-top: 20px;
+}
+
+.tool-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#character-length-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#character-length-label {
+  color: var(--almost-white-color);
+}
+
+#character-length-value {
+  color: var(--neon-green-color);
+  font-size: 1.2em;
+}
+
+/* Tools Box Style -> End */
 
 @media screen and (max-width: 1100px) {
   .password-box {

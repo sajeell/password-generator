@@ -26,6 +26,31 @@ function Main() {
             }}
           />
         </div>
+        <div className='tools-box'>
+          <div
+            className='tool-row'
+            id='character-length-row'
+          >
+            <p id='character-length-label'>Character Length</p>
+            <p id='character-length-value'>10</p>
+          </div>
+          <div
+            className='tool-row'
+            id='slider-row'
+          ></div>
+          <div
+            className='tool-row'
+            id='radiogroups-wrapper'
+          ></div>
+          <div
+            className='tool-row'
+            id='strength-row'
+          ></div>
+          <div
+            className='tool-row'
+            id='generate-button-row'
+          ></div>
+        </div>
       </div>
     </div>
   )
