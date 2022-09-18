@@ -1,12 +1,13 @@
 import { title } from '../shared/data/data'
 import '../shared/style/main.css'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import clipBoardIcon from '../shared/icon/clipboard.svg'
 import Slider from '../shared/input/Slider'
 
 function Main() {
   const [password, setPassword] = useState('')
+  const [length, setLength] = useState(10)
 
   useEffect(() => {
     setPassword('PTx1f5DaFX')
@@ -33,13 +34,16 @@ function Main() {
             id='character-length-row'
           >
             <p id='character-length-label'>Character Length</p>
-            <p id='character-length-value'>10</p>
+            <p id='character-length-value'>{length}</p>
           </div>
           <div
             className='tool-row'
             id='slider-row'
           >
-            <Slider />
+            <Slider
+              value={length}
+              onChange={(e) => setLength(e.target.value)}
+            />
           </div>
           <div
             className='tool-row'

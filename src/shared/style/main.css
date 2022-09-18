@@ -106,7 +106,7 @@
 }
 
 input[type='range']::-webkit-slider-runnable-track {
-  height: 10px;
+  min-height: 10px;
   -webkit-appearance: none;
   color: var(--neon-green-color);
   margin-top: -1px;
@@ -117,9 +117,9 @@ input[type='range']::-webkit-slider-thumb {
   width: 12px;
   height: 12px;
   border-radius: 20px;
-  cursor: pointer;
+  cursor: e-resize;
   background: var(--almost-white-color);
-  box-shadow: -85px 0 0 80px var(--neon-green-color);
+  box-shadow: -195px 0 0 190px var(--neon-green-color);
 }
 
 /* Tools Box Style -> End */
@@ -128,10 +128,26 @@ input[type='range']::-webkit-slider-thumb {
   .password-box {
     width: 50vw;
   }
+
+  .tools-box {
+    width: 50vw;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    box-shadow: -205px 0 0 200px var(--neon-green-color);
+  }
 }
 
 @media screen and (max-width: 768px) {
   .password-box {
     width: 70vw;
+  }
+
+  .tools-box {
+    width: 70vw;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    box-shadow: -205px 0 0 200px var(--neon-green-color);
   }
 }
