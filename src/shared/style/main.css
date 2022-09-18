@@ -67,6 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: var(--box-bg-color);
   padding: 0em 2em;
   border-radius: 5px;
@@ -75,8 +76,9 @@
 }
 
 .tool-row {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 #character-length-row {
@@ -93,6 +95,31 @@
 #character-length-value {
   color: var(--neon-green-color);
   font-size: 1.2em;
+}
+
+#character-length-slider {
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  overflow: hidden;
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: var(--neon-green-color);
+  margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  background: var(--almost-white-color);
+  box-shadow: -85px 0 0 80px var(--neon-green-color);
 }
 
 /* Tools Box Style -> End */

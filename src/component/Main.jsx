@@ -3,6 +3,7 @@ import '../shared/style/main.css'
 
 import { useEffect, useState } from 'react'
 import clipBoardIcon from '../shared/icon/clipboard.svg'
+import Slider from '../shared/input/Slider'
 
 function Main() {
   const [password, setPassword] = useState('')
@@ -37,7 +38,9 @@ function Main() {
           <div
             className='tool-row'
             id='slider-row'
-          ></div>
+          >
+            <Slider />
+          </div>
           <div
             className='tool-row'
             id='radiogroups-wrapper'
