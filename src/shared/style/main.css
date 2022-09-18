@@ -48,3 +48,9 @@
 }
 
 /* Password Box Style -> End */
+
+@media screen and (max-width: 600px) {
+  .password-box {
+    width: 70vw;
+  }
+}
