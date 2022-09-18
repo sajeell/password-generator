@@ -1,9 +1,20 @@
 import '../style/main.css'
 
-function RadioGroup() {
+function RadioGroup({
+  label = 'Include Uppercase Letters',
+  onChange = () => {},
+}) {
   return (
     <div className='radiogroup-wrapper'>
-      <button className='button'>Click me</button>
+      <label className='main-checkbox'>
+        {label}
+        <input
+          type='checkbox'
+          id='password-checkbox'
+          onChange={onChange}
+        />
+        <span className='mark'>✓</span>
+      </label>
     </div>
   )
 }

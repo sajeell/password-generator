@@ -122,6 +122,63 @@ input[type='range']::-webkit-slider-thumb {
   box-shadow: -195px 0 0 190px var(--neon-green-color);
 }
 
+.radiogroup-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  color: var(--almost-white-color);
+}
+
+.main-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#password-checkbox {
+  visibility: hidden;
+}
+
+.mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: black;
+  margin-top: 2px;
+}
+
+#password-checkbox:active ~ .mark,
+#password-checkbox:checked ~ .mark {
+  background-color: var(--neon-green-color);
+}
+
+.mark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.mark {
+  color: black;
+  user-select: none;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.main-checkbox input:checked ~ .geekmark:after {
+  display: block;
+}
+
 /* Tools Box Style -> End */
 
 @media screen and (max-width: 1100px) {

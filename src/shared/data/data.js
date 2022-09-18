@@ -1,3 +1,3 @@
 const title = 'Password Generator'
-
-export { title }
+const characterLength = 'Character Length'
+export { title, characterLength }
