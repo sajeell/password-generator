@@ -1,11 +1,11 @@
 import { characterLength, title } from '../shared/data/data'
 import '../shared/style/main.css'
 
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import clipBoardIcon from '../shared/icon/clipboard.svg'
-import Slider from '../shared/input/Slider'
-import RadioGroup from '../shared/input/RadioGroup'
 import Button from '../shared/input/Button'
+import RadioGroup from '../shared/input/RadioGroup'
+import Slider from '../shared/input/Slider'
 
 function Main() {
   const [password, setPassword] = useState('')
