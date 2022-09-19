@@ -150,7 +150,7 @@ input[type='range']::-webkit-slider-thumb {
   user-select: none;
 }
 
-#password-checkbox {
+.password-checkbox {
   visibility: hidden;
 }
 
@@ -164,8 +164,8 @@ input[type='range']::-webkit-slider-thumb {
   margin-top: 2px;
 }
 
-#password-checkbox:active ~ .mark,
-#password-checkbox:checked ~ .mark {
+.password-checkbox:active ~ .mark,
+.password-checkbox:checked ~ .mark {
   background-color: var(--neon-green-color);
 }
 

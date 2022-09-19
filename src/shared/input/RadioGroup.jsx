@@ -10,7 +10,7 @@ function RadioGroup({
         {label}
         <input
           type='checkbox'
-          id='password-checkbox'
+          className='password-checkbox'
           onChange={onChange}
         />
         <span className='mark'>✓</span>
