@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { characterLength, title } from '../shared/data/data'
 import '../shared/style/main.css'
 
@@ -6,6 +8,7 @@ import clipBoardIcon from '../shared/icon/clipboard.svg'
 import Button from '../shared/input/Button'
 import RadioGroup from '../shared/input/RadioGroup'
 import Slider from '../shared/input/Slider'
+import Swal from 'sweetalert2'
 
 const labels = [
   { label: 'Include Uppercase Letters', checked: false },
@@ -20,10 +23,34 @@ function Main() {
   const [strength, setStrength] = useState('TOO WEAK!')
   const [count, setCount] = useState(0)
 
-  // Generate password of given length
-  const generatePassword = () => {}
+  const generatePassword = () => {
+    if (
+      labels[0].checked === false &&
+      labels[1].checked === false &&
+      labels[2].checked === false &&
+      labels[3].checked === false
+    ) {
+      Swal.fire({
+        title: 'Error!',
+        text: 'No Check Box Selected!',
+        icon: 'error',
+        confirmButtonText: 'Try Again',
+      })
+    }
+    let chars = ''
+    if (labels[0].checked) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    if (labels[1].checked) chars += 'abcdefghijklmnopqrstuvwxyz'
+    if (labels[2].checked) chars += '0123456789'
+    if (labels[3].checked) chars += '!@#$%^&*()_+~`|}{[]:;?><,./-=\'"'
+    let passwordLength = length
+    let password = ''
+    for (let i = 0; i <= passwordLength; i++) {
+      let randomNumber = Math.floor(Math.random() * chars.length)
+      password += chars.substring(randomNumber, randomNumber + 1)
+    }
+    setPassword(password)
+  }
 
-  // Determine strength of the password on given conditions
   const determineStrength = () => {
     if (
       !labels[0].checked &&
