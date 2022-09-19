@@ -5,6 +5,10 @@
   --neon-green-color: #a4ffaf;
   --box-width: 25vw;
   --box-black-color: #18171f;
+  --too-weak-color: #f64a4a;
+  --weak-color: #fb7c58;
+  --medium-color: #f8cd65;
+  --strong-color: #a4ffaf;
 }
 
 /* Main Div Style -> Start */
@@ -197,6 +201,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 #strength-value {
+  width: 140%;
   color: var(--almost-white-color);
 }
 
@@ -234,10 +239,31 @@ input[type='range']::-webkit-slider-thumb {
   background-color: var(--neon-green-color);
   font-weight: 700;
   margin-bottom: 20px;
+  border: none;
 }
 
 .custom-button img {
   margin-left: 20px;
+}
+
+.too-weak {
+  background-color: var(--too-weak-color);
+  border: 2px solid var(--too-weak-color);
+}
+
+.weak {
+  background-color: var(--weak-color);
+  border: 2px solid var(--weak-color);
+}
+
+.medium {
+  background-color: var(--medium-color);
+  border: 2px solid var(--medium-color);
+}
+
+.strong {
+  background-color: var(--strong-color);
+  border: 2px solid var(--strong-color);
 }
 
 /* Tools Box Style -> End */
