@@ -170,6 +170,8 @@ function Main() {
           <img
             src={clipBoardIcon}
             alt='copy'
+            width={20}
+            height={20}
             id='copy-button'
             onClick={() => {
               navigator.clipboard.writeText(password)

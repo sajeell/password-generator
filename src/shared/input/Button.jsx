@@ -13,6 +13,8 @@ function Button({ onClick = () => {} }) {
         <img
           src={arrowRightIcon}
           alt='Arrow Right Icon'
+          width={15}
+          height={15}
         />
       </button>
     </div>
