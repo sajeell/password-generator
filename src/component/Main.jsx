@@ -60,6 +60,61 @@ function Main() {
     ) {
       setStrength('TOO WEAK!')
     } else if (
+      labels[0].checked &&
+      labels[1].checked &&
+      !labels[2].checked &&
+      !labels[3].checked
+    ) {
+      setStrength('WEAK')
+    } else if (
+      length > 10 &&
+      labels[0].checked &&
+      !labels[1].checked &&
+      !labels[2].checked &&
+      labels[3].checked
+    ) {
+      setStrength('MEDIUM')
+    } else if (
+      length > 10 &&
+      !labels[0].checked &&
+      labels[1].checked &&
+      !labels[2].checked &&
+      labels[3].checked
+    ) {
+      setStrength('MEDIUM')
+    } else if (
+      length > 10 &&
+      !labels[0].checked &&
+      labels[1].checked &&
+      labels[2].checked &&
+      !labels[3].checked
+    ) {
+      setStrength('MEDIUM')
+    } else if (
+      length > 10 &&
+      labels[0].checked &&
+      labels[1].checked &&
+      !labels[2].checked &&
+      !labels[3].checked
+    ) {
+      setStrength('MEDIUM')
+    } else if (
+      length > 10 &&
+      labels[0].checked &&
+      labels[1].checked &&
+      labels[2].checked &&
+      !labels[3].checked
+    ) {
+      setStrength('MEDIUM')
+    } else if (
+      length > 10 &&
+      labels[0].checked &&
+      labels[1].checked &&
+      labels[2].checked &&
+      labels[3].checked
+    ) {
+      setStrength('STRONG')
+    } else if (
       length <= 10 &&
       !labels[0].checked &&
       !labels[1].checked &&

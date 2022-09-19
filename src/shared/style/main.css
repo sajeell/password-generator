@@ -57,10 +57,17 @@
   color: var(--almost-white-color);
   font-size: 1.2em;
   letter-spacing: 0.1em;
+  max-width: 100%;
+  overflow: scroll;
+}
+
+#password::-webkit-scrollbar {
+  display: none;
 }
 
 #copy-button {
   cursor: pointer;
+  margin-left: 20px;
 }
 
 /* Password Box Style -> End */
